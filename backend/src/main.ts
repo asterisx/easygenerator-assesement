@@ -1,11 +1,11 @@
-import { ValidationPipe } from '@nestjs/common';
+import { LogLevel, ValidationPipe } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { LoggingInterceptor } from 'common/logging.interceptor';
 import { AppModule } from './app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, {
-    logger: JSON.parse(process.env.BACKEND_LOG_LEVEL),
+    logger: process.env.BACKEND_LOG_LEVEL.split(',') as LogLevel[],
   });
   app.useGlobalPipes(
     new ValidationPipe({
