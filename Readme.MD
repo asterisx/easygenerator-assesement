@@ -24,6 +24,9 @@ Mongoose and decorators was chosen as the ORM layer due to its compatibility wit
 
 Comprehensive error handling and graceful error message displays are not extensively implemented in this project. The focus is primarily on establishing basic functionality and workflow.
 
+### Schema
+Right now types and fields are repeated across backend and frontend. Using GraphQL or other mechanisms of Schema sync between frontend and backend would be the right pattern. But for this coding assesement I kept it simple and favored quick implementation.
+
 ### Requirements:
 
 - [x] **Front-end Development Requirements:**
