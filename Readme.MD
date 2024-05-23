@@ -27,6 +27,9 @@ Comprehensive error handling and graceful error message displays are not extensi
 ### Schema
 Right now types and fields are repeated across backend and frontend. Using GraphQL or other mechanisms of Schema sync between frontend and backend would be the right pattern. But for this coding assesement I kept it simple and favored quick implementation.
 
+### Authentication 
+The correct pattern is to use a proper access token and refresh token flow. For now, I have implemented a simple access token flow which is good enough for a coding assessment.
+
 ### Requirements:
 
 - [x] **Front-end Development Requirements:**
@@ -69,6 +72,7 @@ Right now types and fields are repeated across backend and frontend. Using Graph
   - [x] Use TypeScript.
   - [x] Implement logging on the back end. `Basic Logging Implemented`
   - [x] Follow security best practices.
+`Basic practices Implemented`
 
 - [x] **Submission:**
   - [x] Once completed, create a public GitHub repository and push your code to it.
